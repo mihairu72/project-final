@@ -35,19 +35,6 @@ public class FileUtil {
         } catch (IOException e) {
             throw new IllegalRequestDataException("Could not save image file: " + fileName);
         }
-//        if (multipartFile.isEmpty()) {
-//            throw new IllegalRequestDataException("Select a file to upload.");
-//        }
-//
-//        File dir = new File(directoryPath);
-//        if (dir.exists() || dir.mkdirs()) {
-//            File file = new File(directoryPath + fileName);
-//            try (OutputStream outStream = new FileOutputStream(file)) {
-//                outStream.write(multipartFile.getBytes());
-//            } catch (IOException ex) {
-//                throw new IllegalRequestDataException("Failed to upload file" + multipartFile.getOriginalFilename());
-//            }
-//        }
     }
 
     public static Resource download(String fileLink) {
